@@ -1,0 +1,16 @@
+@import './Project/Components/scss/foundation';
+
+
+@import './Project/Layout/Footer/Footer';
+@import './Project/Layout/Header/Header';
+@import './Project/Layout/Nav/Nav';
+
+
+@import './Project/Pages/About/About';
+@import './Project/Pages/Home/Home';
+@import './Project/Pages/Contact/Contact';
+
+.app {
+    display: block;
+    position: relative;
+}
