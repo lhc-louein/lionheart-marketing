@@ -153,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #707070;
 }
 
+.header .head1 {
+  font-size: 0;
+}
+
 .header-logo {
   display: inline-block;
 }
@@ -162,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 751px) {
-  .header-logo svg {
+  .header-logo img {
     width: 14.5rem;
   }
 }
@@ -176,17 +180,91 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 
+@media screen and (max-width: 751px) {
+  .nav {
+    right: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: fixed;
+  }
+}
+
 .nav-wrapper {
   height: 100%;
+  position: relative;
+}
+
+.nav-trigger {
+  width: 3.5rem;
+  height: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.nav-trigger .wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav-trigger__line {
+  height: 0.2rem;
+  width: 100%;
+  position: absolute;
+  background-color: #707070;
+}
+
+.nav-trigger__line:first-child {
+  top: 0;
+  left: 0;
+}
+
+.nav-trigger__line:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.nav-trigger__line:last-child {
+  bottom: 0;
+  left: 0;
 }
 
 .nav-menu {
   height: 100%;
 }
 
+@media screen and (max-width: 751px) {
+  .nav-menu {
+    margin-right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    padding: 6rem 2rem 2rem;
+    position: relative;
+    background-color: #eee;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .show-nav .nav-menu {
+    margin-right: 0rem;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
+
 @media screen and (min-width: 1281px) {
   .nav-menu__item:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 751px) {
+  .nav-menu__item:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }
 

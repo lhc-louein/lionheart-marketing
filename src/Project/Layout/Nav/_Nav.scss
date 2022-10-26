@@ -7,17 +7,87 @@
     width: auto;
     // background-color: red;
 
+    @include mq_sp {
+        right: 0;
+        height: fit-content;
+        position: fixed;
+    }
+
     &-wrapper {
         height: 100%;
+        position: relative;
+
+        @include mq_sp {
+            // overflow: hidden;
+        }
+    }
+    
+    &-trigger {
+        width: 3.5rem;
+        height: 3rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 2;
+        
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        &__line {
+            height: 0.2rem;
+            width: 100%;
+            position: absolute;
+            background-color: #707070;
+
+            &:first-child {
+                top: 0;
+                left: 0;
+            }
+
+            &:nth-child(2) {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+
+            &:last-child {
+                bottom: 0;
+                left: 0;
+            }
+        }
     }
 
     &-menu {
         height: 100%;
+        
+        @include mq_sp {
+            $navMenuWidth: 20rem;
+            margin-right: -$navMenuWidth;
+            width: $navMenuWidth;
+            height: 100vh;
+            padding: 6rem 2rem 2rem;
+            position: relative;
+            background-color: #eee;           
+            transition: 0.3s ease;
+
+            .show-nav & {
+                margin-right: 0rem;
+                transition: 0.3s ease;
+            }
+        }
 
         &__item {
             &:not(:last-child) {
                 @include mq_pc {
                     margin-right: 2rem;
+                }
+
+                @include mq_sp {
+                    margin-bottom: 1rem;
                 }
             }
             

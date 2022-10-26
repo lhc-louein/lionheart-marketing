@@ -4,6 +4,10 @@
     padding: 2rem;
     border-bottom: 1px solid #707070;
 
+    .head1 {
+        font-size: 0;
+    }
+
     &-logo {
         display: inline-block;
 
@@ -11,7 +15,7 @@
             opacity: 0.5;
         }
 
-        svg {
+        img {
             @include mq_sp {
                 width: 14.5rem;
             }

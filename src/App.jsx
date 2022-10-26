@@ -1,11 +1,14 @@
+// Plugins
+// import $ from 'jquery';
+
 // Layout
 import Nav from './Project/Layout/Nav/Nav';
 import Header from './Project/Layout/Header/Header';
 import Footer from './Project/Layout/Footer/Footer';
 // Content
 import Home from './Project/Pages/Home/Home';
-import About from './Project/Pages/About/About';
-import Contact from './Project/Pages/Contact/Contact';
+// import About from './Project/Pages/About/About';
+// import Contact from './Project/Pages/Contact/Contact';
 // css
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'sanitize.css';
