@@ -20,7 +20,7 @@ function Nav() {
                 </div>
                 <ul className="nav-menu d-lg-flex align-items-lg-center justify-content-lg-center">
                     <li className="nav-menu__item">
-                        <a href="/about/" className="nav-menu__item__anchor">ABOUT</a>
+                        <a href="/about/" className="nav-menu__item__anchor">ABOUT LOL</a>
                     </li>
                     <li className="nav-menu__item">
                         <a href="/products/" className="nav-menu__item__anchor">PRODUCTS</a>
