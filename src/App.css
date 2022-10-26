@@ -286,6 +286,23 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.about-cont__sec {
+  padding: 2rem 0;
+}
+
+.about-cont__sec:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.about-cont .head2 {
+  margin-bottom: 1rem;
+}
+
+.about-cont__p {
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
+
 .home {
   display: block;
 }
@@ -308,6 +325,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
+  display: block;
+}
+
+.notfound {
   display: block;
 }
 

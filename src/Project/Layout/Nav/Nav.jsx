@@ -31,12 +31,6 @@ function Nav() {
                     <li className="nav-menu__item">
                         <a href="/contact/" className="nav-menu__item__anchor">CONTACT</a>
                     </li>
-                    <li className="nav-menu__item">
-                        <a href="/contact/" className="nav-menu__item__anchor">CONTACT</a>
-                    </li>
-                    <li className="nav-menu__item">
-                        <a href="/contact/" className="nav-menu__item__anchor">CONTACT</a>
-                    </li>
                 </ul>
             </div>
         </nav>
