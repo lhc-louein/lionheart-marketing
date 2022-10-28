@@ -34,6 +34,7 @@
             height: 100%;
             width: 100%;
             position: relative;
+            overflow: hidden;
         }
 
         &__line {
@@ -41,22 +42,41 @@
             width: 100%;
             position: absolute;
             background-color: #707070;
+            transition: 0.3s all ease;
 
             &:first-child {
                 top: 0;
                 left: 0;
+                margin: auto;
+
+                .show-nav & {
+                    transform: rotate(45deg);
+                    top: calc(50% - 0.1rem);
+                    // bottom: 0;
+                }
             }
 
             &:nth-child(2) {
                 top: 0;
                 bottom: 0;
                 left: 0;
+                right: 0%;
                 margin: auto;
+
+                .show-nav & {
+                    right: -200%;
+                }
             }
 
             &:last-child {
                 bottom: 0;
                 left: 0;
+                margin: auto;
+                
+                .show-nav & {
+                    transform: rotate(-45deg);
+                    bottom: calc(50% - 0.1rem);
+                }
             }
         }
     }

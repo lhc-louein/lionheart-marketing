@@ -9,7 +9,7 @@ function Nav() {
     }
 
     return ( 
-        <nav ref={navEl} className={!nav?'nav':'nav show-nav'}>
+        <nav ref={navEl} className={`nav ${!nav?'':'show-nav'}`}>
             <div className="nav-wrapper">
                 <div className="nav-trigger layout-sp" onClick={trigger}>
                     <div className="wrapper">
@@ -18,7 +18,7 @@ function Nav() {
                         <div className="nav-trigger__line"></div>
                     </div>
                 </div>
-                <ul className="nav-menu d-lg-flex align-items-lg-center justify-content-lg-center">
+                <ul className="nav-menu d-pc-flex align-items-pc-center justify-content-pc-center">
                     <li className="nav-menu__item">
                         <a href="/about/" className="nav-menu__item__anchor">ABOUT</a>
                     </li>

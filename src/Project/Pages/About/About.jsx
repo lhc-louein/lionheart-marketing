@@ -1,6 +1,12 @@
+import {Helmet} from 'react-helmet';
+
 function About() {
     return ( 
         <div className="about">
+
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <div className="layout">
                 <section className="about-cont__sec">
                     <div className="about-cont__wrapper">
