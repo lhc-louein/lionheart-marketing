@@ -12,13 +12,13 @@
     
     &-pc {
         @include mq_sp {
-            display: none;
+            display: none !important;
         }
     }
 
     &-sp {
         @include mq_pc {
-            display: none;
+            display: none !important;
         }
     }
 }

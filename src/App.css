@@ -922,7 +922,7 @@ progress {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .col-pc {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
@@ -2645,7 +2645,7 @@ progress {
   }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   .table-responsive-pc {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4199,7 +4199,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .dropdown-menu-pc-start {
     --bs-position: start;
   }
@@ -4913,7 +4913,7 @@ fieldset:disabled .btn {
   overflow-y: auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navbar-expand-pc {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -6323,7 +6323,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .list-group-horizontal-pc {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -7020,7 +7020,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   .modal-fullscreen-pc-down {
     width: 100vw;
     max-width: none;
@@ -7799,7 +7799,7 @@ fieldset:disabled .btn {
   --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   .offcanvas-pc {
     position: fixed;
     bottom: 0;
@@ -7824,14 +7824,14 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 768.98px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-pc {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   .offcanvas-pc.offcanvas-start {
     top: 0;
     left: 0;
@@ -7876,7 +7876,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .offcanvas-pc {
     --bs-offcanvas-height: auto;
     --bs-offcanvas-border-width: 0;
@@ -8842,7 +8842,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .sticky-pc-top {
     position: -webkit-sticky;
     position: sticky;
@@ -9593,7 +9593,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .float-pc-start {
     float: left !important;
   }
@@ -14595,7 +14595,7 @@ html {
   font: 10px/1.7 "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   html {
     font-size: 2.667vw;
   }
@@ -14621,7 +14621,7 @@ a:hover {
   padding: 0 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .layout {
     margin: 0 auto;
     padding: 0 2rem;
@@ -14629,15 +14629,15 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .layout-pc {
-    display: none;
+    display: none !important;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .layout-sp {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -14645,7 +14645,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: inherit;
   }
@@ -14675,6 +14675,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 10rem;
 }
 
+.textbox {
+  display: block;
+}
+
+.checkbox {
+  display: block;
+}
+
+.radio-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .footer {
   display: block;
   padding: 3.5rem 0;
@@ -14698,7 +14711,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: block;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .footer-cont2__item:nth-child(3n) {
     margin-right: 1rem;
   }
@@ -14738,7 +14751,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-logo img {
     width: 14.5rem;
   }
@@ -14753,7 +14766,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   width: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     right: 0;
     height: -webkit-fit-content;
@@ -14770,18 +14783,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .nav-trigger {
   width: 3.5rem;
-  height: 3rem;
+  height: 10rem;
   position: absolute;
-  top: 2rem;
+  top: 0;
   right: 2rem;
   z-index: 2;
 }
 
+@media screen and (max-width: 767px) {
+  .nav-trigger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .nav-trigger .wrapper {
-  height: 100%;
+  height: 3rem;
   width: 100%;
   position: relative;
   overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .nav-trigger__line {
@@ -14833,7 +14857,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-menu {
     margin-right: -20rem;
     width: 20rem;
@@ -14851,13 +14875,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .nav-menu__item:not(:last-child) {
     margin-right: 2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-menu__item:not(:last-child) {
     margin-bottom: 1rem;
   }
