@@ -61,4 +61,4 @@ function App() {
 
 export default App;
 
-console.log('tes');
+console.log('test');
